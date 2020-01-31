@@ -1,0 +1,15 @@
+import Config
+
+# Скопируйте этот файл в config/local.exs и укажите свои пути:
+#
+#     cp config/local.exs.example config/local.exs
+#
+# Затем отредактируйте значения ниже под свою систему.
+
+config :stamper, :local_path,
+  # Папка, куда временно сохраняются файлы для проставления штампа.
+  # Должна существовать и быть доступной на запись.
+  file_path: "/path/to/temp/dir/",
+
+  # Путь к java-приложению pdfstamp.jar, которое проставляет штамп.
+  java_repository_path: "/path/to/pdfstamp.jar"
